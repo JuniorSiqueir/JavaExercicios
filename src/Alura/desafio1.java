@@ -4,20 +4,57 @@ import java.util.Scanner;
 
 public class desafio1 {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
 
         //EX1
-        Scanner input = new Scanner(System.in);
+        System.out.println("ESCREVA O PRIMEIRO NUMERO:");
         double notaA = input.nextDouble();
+        System.out.println("ESCREVA O SEGUNDO NUMERO:");
         double notaB = input.nextDouble();
         double media = (notaA + notaB) / 2;
         System.out.println("MÉDIA = " + media);
 
         //EX2
+        System.out.println("ESCREVA ALTURA DO ALUNO:");
+        double alturaAluno = input.nextDouble();
+        int alturaInt = (int) alturaAluno;
+        System.out.println("Altura do aluno: " + alturaInt);
+
+        //EX3
+        System.out.println("ESCREVA NOTA DO ALUNO:");
+        char notaAluno = input.next().charAt(0);
+        System.out.println("ESCREVA O TEXTO GENERICO:");
+        String textoGenerico = input.next();
+        System.out.println("A NOTA DO ALUNO É " + notaAluno + " esse é o texto genérico: " + textoGenerico);
+
+        //EX4
+        System.out.println("Qual é o preço do produto?");
+        double precoProduto = input.nextDouble();
+        System.out.println("Qual é a quantidade do produto?");
+        int quantidadeProduto = input.nextInt();
+        double valorEstoque = precoProduto * quantidadeProduto;
+        System.out.println("Valor do estoque: " + valorEstoque);
+
+        //EX5
+        System.out.println("Qual é o seu dinheiro em dolar?");
+        double valorEmDolares = input.nextDouble();
+        double valorEmReais = valorEmDolares * 4.94;
+        System.out.printf("Você tem %.2fR$ em reais", valorEmReais);
+
+        //EX6
+        System.out.println("QUAL É O PREÇO DO SEU PRODUTO?");
+        double precoOriginal = input.nextDouble();
+        System.out.println("QUANTOS % DE DESCONTO VOCÊ DESEJA DAR?");
+        double percentualDesconto = input.nextDouble();
+        double valorDesconto = precoOriginal - (percentualDesconto / 100);
+        System.out.printf("Valor final do produto: R$ %.2f%n", valorDesconto);
+
 
         input.close();
     }
 
-    /**
+    /*
      * Em Java, a manipulação eficiente de variáveis é crucial para
      * armazenar dados em memória. Os tipos primitivos, como inteiros, ponto flutuante,
      * char e boolean, desempenham papéis específicos. A classe String é essencial para 
