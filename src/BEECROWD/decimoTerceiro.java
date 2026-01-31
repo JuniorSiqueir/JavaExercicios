@@ -6,6 +6,8 @@ public static void main(String[] args) {
     float a = sc.nextFloat();
     float b = sc.nextFloat();
     float c = sc.nextFloat();
+
+    
     
 
     
