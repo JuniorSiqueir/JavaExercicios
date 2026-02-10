@@ -13,7 +13,7 @@ public class leitura {
         float  nota = input.nextFloat();
 
         if (ano > 2020){
-            System.out.println("Filme novo");
+            System.out.println("Você vai ver o filme : " + nome + " do ano de " + ano);
         }else {
             System.out.println("Filme velho");
         }
