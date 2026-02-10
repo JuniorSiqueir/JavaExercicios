@@ -1,5 +1,5 @@
 
-
+package BEECROWD;
 import java.util.Scanner;
 
 public class quarto {
