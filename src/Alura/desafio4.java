@@ -95,7 +95,7 @@ public class desafio4 {
             System.out.println("Não é par");
         }
         */
-        
+
 
         sc.close();
 
@@ -121,4 +121,4 @@ Crie um programa que solicite ao usuário a entrada de um número inteiro. Verif
 Crie um programa que solicite ao usuário um número e calcule o fatorial desse número. 
 */
 
-}}
+    }}
