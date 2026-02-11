@@ -36,6 +36,40 @@ public class desafio4 {
         }
 
         */
+
+        /* 
+        Atividade 3
+        System.out.println("");
+        System.out.println("Qual sua escolha?");
+        System.out.println("1. Calcular área do quadrado");
+        System.out.println("2. Calcular área do círculo");
+        int escolha = sc.nextInt();
+
+        switch (escolha) {
+            case 1:
+                System.out.println("Passe as medidas");
+                System.out.println("");
+                float medidaA = sc.nextFloat();
+                float medidaB = sc.nextFloat();
+                System.out.println("");
+                System.out.println("A área do seu quadrado é: " + (medidaA * medidaB) + "cm");
+                
+                break;
+
+            case 2:
+                System.out.println("Passe as medidas");
+                System.out.println("");
+                System.out.println("Qual o Raio?");
+                float medidaRaio = sc.nextFloat();
+                System.out.println("A area do seu circulo é: " + (3.14 * (medidaRaio*medidaRaio)) + "cm");
+                
+                break;    
+        
+            default:
+                System.out.println("Opção invalida");
+                break;
+        }
+                */
             
         
 
