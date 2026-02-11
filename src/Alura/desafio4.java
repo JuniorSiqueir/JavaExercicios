@@ -83,7 +83,18 @@ public class desafio4 {
             numTabuada++;    
         }
         */
-            
+
+        /* 
+        Atividade 5
+        System.out.println("Me passe um numero");
+        int numA = sc.nextInt();
+
+        if (numA % 2 == 0) {
+            System.out.println("É par");
+        }else{
+            System.out.println("Não é par");
+        }
+        */
         
 
         sc.close();
