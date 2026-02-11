@@ -70,6 +70,19 @@ public class desafio4 {
                 break;
         }
                 */
+
+        /*
+        Atividade 4
+        System.out.println("Me fale o numero que deseja ver a tabuada");
+        int numUser = sc.nextInt();
+        System.out.println("");
+        int numTabuada = 1;
+
+        while (numTabuada <= 10) {
+            System.out.println(numUser + " X " + numTabuada + " : " + (numUser * numTabuada));
+            numTabuada++;    
+        }
+        */
             
         
 
