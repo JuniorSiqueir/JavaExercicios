@@ -1,5 +1,7 @@
 package Alura.Screenmatch;
 
+import br.com.alura.screenmatch.modelos.Filme;
+
 public class Main {
     static void main(String[] args) {
         Filme favorito = new Filme();
@@ -15,6 +17,13 @@ public class Main {
         favorito.avalia(9);
 
         System.out.println("Média de avaliações do Filme:"  + favorito.pegaMedia());
+        System.out.println(favorito.getSomaDasAvaliacoes());
+        System.out.println(favorito.getTotalDeAvaliacoes());
+
+
+
+
+
     }
 
 }
