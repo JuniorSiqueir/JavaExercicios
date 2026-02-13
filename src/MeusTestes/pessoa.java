@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class pessoa {
     private int idade;
     private String nome;
-    private double salario;
+    private double saldo;
     private boolean conta;
     Scanner inputPessoa = new Scanner(System.in);
 
@@ -25,12 +25,12 @@ public class pessoa {
         this.nome = nome;
     }
 
-    public double getSalario() {
-        return salario;
+    public double getSaldo() {
+        return saldo;
     }
 
-    public void setSalario(double salario) {
-        this.salario = salario;
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     public boolean isConta() {
@@ -66,8 +66,8 @@ public class pessoa {
     void adicionarSaldo() {
         if (isConta() == true) {
             System.out.println("Coloque o valor que deseja inserir");
-            int valorInserir = inputPessoa.nextInt();
-            setSalario(valorInserir);
+            double valorInserir = inputPessoa.nextDouble();
+            setSaldo(valorInserir);
         } else {
             System.out.println("Sem conta");
         }

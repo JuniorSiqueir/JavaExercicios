@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        int escolhaMenu = 0;
 
         pessoa pessoa1 = new pessoa();
         System.out.print("ESCREVA NOME: ");
@@ -20,19 +21,35 @@ public class Main {
             pessoa1.criarConta();
         }
 
-        System.out.println("Deseja adicionar saldo?");
-        System.out.println("1 - SIM");
-        System.out.println("2 - NÃO");
-        int escolha = input.nextInt();
+        while (escolhaMenu != 3) {
 
-        if (escolha == 1) {
-            pessoa1.adicionarSaldo();
-        } else {
-            System.out.println("OK");
+            System.out.println("O que deseja fazer?");
+            System.out.println("1 - ADICIONAR SALDO");
+            System.out.println("2 - VER SALDO");
+            System.out.println("3 - SAIR");
+            escolhaMenu = input.nextInt();
+
+            switch (escolhaMenu) {
+                case 1:
+                    pessoa1.adicionarSaldo();
+                    break;
+
+                case 2:
+                    System.out.println(pessoa1.getSaldo());
+                    break;
+
+                case 3:
+                    System.out.println("Saindo!");
+                    break;
+
+                default:
+                    System.out.println("Opção invalida!");
+                    break;
+            }
+
         }
 
         input.close();
 
     }
-
 }
