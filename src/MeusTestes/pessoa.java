@@ -55,6 +55,7 @@ public class pessoa {
                     break;
                 case 2:
                     System.out.println("Conta não vai ser criada");
+                    setConta(false);
                     break;
 
                 default:
