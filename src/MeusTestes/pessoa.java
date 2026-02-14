@@ -68,7 +68,7 @@ public class pessoa {
         if (isConta() == true) {
             System.out.println("Coloque o valor que deseja inserir");
             double valorInserir = inputPessoa.nextDouble();
-            setSaldo(valorInserir);
+            this.saldo += valorInserir;
         } else {
             System.out.println("Sem conta");
         }

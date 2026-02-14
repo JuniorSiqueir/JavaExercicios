@@ -23,38 +23,43 @@ public class Main {
             System.out.println("");
         }
 
-        while (escolhaMenu != 3 || pessoa1.isConta() == true) {
 
-            System.out.println("O que deseja fazer?");
-            System.out.println("1 - ADICIONAR SALDO");
-            System.out.println("2 - VER SALDO");
-            System.out.println("3 - SAIR");
-            escolhaMenu = input.nextInt();
-            System.out.println("");
+        if(pessoa1.isConta()) {
 
-            switch (escolhaMenu) {
-                case 1:
-                    pessoa1.adicionarSaldo();
-                    System.out.println("");
-                    break;
+            while (escolhaMenu != 3) {
 
-                case 2:
-                    System.out.println("SEU SALDO: " + pessoa1.getSaldo() + "R$");
-                    System.out.println("");
-                    break;
+                System.out.println("O que deseja fazer?");
+                System.out.println("1 - ADICIONAR SALDO");
+                System.out.println("2 - VER SALDO");
+                System.out.println("3 - SAIR");
+                escolhaMenu = input.nextInt();
+                System.out.println("");
 
-                case 3:
-                    System.out.println("Saindo!");
-                    break;
+                switch (escolhaMenu) {
+                    case 1:
+                        pessoa1.adicionarSaldo();
+                        System.out.println("");
+                        break;
 
-                default:
-                    System.out.println("Opção invalida!");
-                    break;
+                    case 2:
+                        System.out.println("SEU SALDO: " + pessoa1.getSaldo() + "R$");
+                        System.out.println("");
+                        break;
+
+                    case 3:
+                        System.out.println("Saindo!");
+                        break;
+
+                    default:
+                        System.out.println("Opção invalida!");
+                        break;
+                }
+
             }
 
+            input.close();
+
+        }else{
+            System.out.println("Acesso ao sistema bancário encerrado. Vai pra casa.");
         }
-
-        input.close();
-
-    }
-}
+    }}
