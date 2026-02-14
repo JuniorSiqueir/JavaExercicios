@@ -26,12 +26,13 @@ public class Main {
 
         if(pessoa1.isConta()) {
 
-            while (escolhaMenu != 3) {
-
+            while (escolhaMenu != 4) {
+                System.out.println("");
                 System.out.println("O que deseja fazer?");
                 System.out.println("1 - ADICIONAR SALDO");
                 System.out.println("2 - VER SALDO");
-                System.out.println("3 - SAIR");
+                System.out.println("3 - VER CONTA");
+                System.out.println("4 - SAIR");
                 escolhaMenu = input.nextInt();
                 System.out.println("");
 
@@ -47,7 +48,11 @@ public class Main {
                         break;
 
                     case 3:
-                        System.out.println("Saindo!");
+                        pessoa1.mostrarInfos();
+                        break;
+
+                    case 4:
+                        System.out.println("SAINDO!");
                         break;
 
                     default:

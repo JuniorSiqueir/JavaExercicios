@@ -74,4 +74,17 @@ public class pessoa {
         }
 
     }
+
+    void mostrarInfos() {
+        if (isConta()) {
+            System.out.println("Conta Existe");
+            System.out.println("");
+            System.out.println("Nome: " + getNome());
+            System.out.println("Idade: " + getIdade());
+            System.out.println("Saldo: " + getSaldo());
+        }else{
+            System.out.println("Conta não encontrada");
+        }
+
+    }
 }
