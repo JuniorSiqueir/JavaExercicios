@@ -15,6 +15,8 @@ public class decimo {
         double totalSalario = (totalVendas * 0.15) + salarioFixo;
 
         System.out.printf("TOTAL = R$ %.2f\n", totalSalario);
+        System.out.println(nomeVendedor);
+        sc.close();
         
     }
 

@@ -19,6 +19,7 @@ public class decimoPrimeiro {
 
 
         System.out.printf("VALOR A PAGAR: R$ %.2f\n", totalPagar);
+        System.out.println(codPecaA + codPecaB);
 
         input.close();
 

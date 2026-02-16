@@ -1,4 +1,4 @@
-package Alura;
+package Alura.DESAFIOALURA;
 
 import java.util.Scanner;
 

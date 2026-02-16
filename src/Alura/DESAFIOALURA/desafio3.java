@@ -1,4 +1,4 @@
-package Alura;
+package Alura.DESAFIOALURA;
 
 import java.util.Scanner;
 
@@ -56,6 +56,7 @@ public class desafio3 {
             }
 
         }
+        input.close();
 
     }
 

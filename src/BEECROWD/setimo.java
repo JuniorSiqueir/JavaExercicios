@@ -11,6 +11,8 @@ public class setimo {
         double media = (a * 2 + b * 3 + c * 5) / (2 + 3 + 5);
         System.out.printf("MEDIA = %.1f\n", media);
 
+        sc.close();
+
 
     }
 

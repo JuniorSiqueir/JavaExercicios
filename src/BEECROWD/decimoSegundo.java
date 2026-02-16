@@ -10,6 +10,7 @@ public class decimoSegundo {
         double calculoVolume = (4/3.0) * 3.14159 * (raio * raio * raio);
 
         System.out.printf("VOLUME = %.3f%n", calculoVolume);
+        sc.close();
 
     }
 

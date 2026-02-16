@@ -12,6 +12,7 @@ public class oitavo {
 
         int diferenca = (a * b - c * d);
         System.out.println("DIFERENCA = " + diferenca);
+        sc.close();
 
     }
 

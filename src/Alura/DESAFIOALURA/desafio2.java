@@ -1,4 +1,4 @@
-package Alura;
+package Alura.DESAFIOALURA;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -26,7 +26,7 @@ public class desafio2 {
                 System.out.println("====================================");
             }
         }
-
+        sc.close();
 
 
     }
