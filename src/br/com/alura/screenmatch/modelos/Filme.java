@@ -1,18 +1,22 @@
 package br.com.alura.screenmatch.modelos;
 
 public class Filme {
-    public String nome;
-    public int anoDeLancamento;
-    public int duracaoEmMinutos;
-    public boolean incluidoNoPlano;
+    private String nome;
+    private int anoDeLancamento;
+    private int duracaoEmMinutos;
+    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
 
     public void exibeFichaTecnica() {
-        System.out.println("nome do Filme: " +nome);
-        System.out.println("Ano de lançamento: " +anoDeLancamento);
-        System.out.println("Duração em minutos: " +duracaoEmMinutos);
-        System.out.println("Incluído no plano: " +incluidoNoPlano);
+        System.out.println("nome do Filme: " + getNome());
+        System.out.println("Ano de lançamento: " + getDuracaoEmMinutos());
+        System.out.println("Duração em minutos: " + getDuracaoEmMinutos());
+        System.out.println("Incluído no plano: " + isIncluidoNoPlano());
+    }
+
+    public double pegaMedia() {
+        return getSomaDasAvaliacoes() / getTotalDeAvaliacoes();
     }
 
     public void avalia(double nota) {
@@ -20,8 +24,36 @@ public class Filme {
         totalDeAvaliacoes++;
     }
 
-    public double pegaMedia() {
-        return somaDasAvaliacoes / totalDeAvaliacoes;
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
+    }
+
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
+
+    public boolean isIncluidoNoPlano() {
+        return incluidoNoPlano;
+    }
+
+    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+        this.incluidoNoPlano = incluidoNoPlano;
     }
 
     public double getSomaDasAvaliacoes() {
@@ -39,4 +71,5 @@ public class Filme {
     public void setTotalDeAvaliacoes(int totalDeAvaliacoes) {
         this.totalDeAvaliacoes = totalDeAvaliacoes;
     }
+
 }
