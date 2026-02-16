@@ -2,7 +2,9 @@ package Alura.DesafioPOO.Desafio2;
 
 public class main {
     static void main(String[] args) {
+
         /*
+         * ATIVIDADE 2
          * idadePessoa pessoa1 = new idadePessoa();
          * 
          * pessoa1.setIdade(18);
@@ -10,9 +12,26 @@ public class main {
          * pessoa1.mostraInfos();
          */
 
-        produto produto1 = new produto();
-        produto1.setPreco(100.00);
-        produto1.aplicarDesconto(5);
+        /*
+         * ATIVIDADE 3
+         * produto produto1 = new produto();
+         * produto1.setPreco(100.00);
+         * produto1.aplicarDesconto(5);
+         */
+
+        /*
+         * ATIVADE 4
+         * aluno aluno1 = new aluno();
+         * aluno1.calculaMedia();
+         */
+
+        /*
+         * ATIVIDADE 5
+         * livro livro1 = new livro();
+         * livro1.setAutor("SLA");
+         * livro1.setTitulo("SLA2");
+         * livro1.fichaLivro();
+         */
 
     }
 
