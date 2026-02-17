@@ -14,7 +14,12 @@ public class pessoa {
     }
 
     public void setIdade(int idade) {
-        this.idade = idade;
+        if (idade < 18) {
+            System.out.println("Você não tem idade para criar um conta");
+        }else{
+            this.idade = idade;
+        }
+        
     }
 
     public String getNome() {
