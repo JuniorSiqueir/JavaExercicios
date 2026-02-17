@@ -6,7 +6,7 @@ import br.com.alura.screenmatch.modelos.serie;
 public class Main {
     static void main(String[] args) {
 
-        /* 
+        
         filme favorito = new filme();
 
         favorito.setNome("The Matrix");
@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Média de avaliações do Filme:" + favorito.pegaMedia());
         System.out.println(favorito.getSomaDasAvaliacoes());
         System.out.println(favorito.getTotalDeAvaliacoes());
-        */
+        
 
         serie serie1 = new serie();
         serie1.setAnoDeLancamento(2020);
