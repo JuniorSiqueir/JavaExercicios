@@ -10,7 +10,7 @@ public class titulo {
 
     public void exibeFichaTecnica() {
         System.out.println("nome do Titulo: " + getNome());
-        System.out.println("Ano de lançamento: " + getDuracaoEmMinutos());
+        System.out.println("Ano de lançamento: " + getAnoDeLancamento());
         System.out.println("Duração em minutos: " + getDuracaoEmMinutos());
         System.out.println("Incluído no plano: " + isIncluidoNoPlano());
     }
