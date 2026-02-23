@@ -1,7 +1,7 @@
 package Alura.Screenmatch;
 
 import br.com.alura.screenmatch.modelos.filme;
-import br.com.alura.screenmatch.modelos.serie;
+//import br.com.alura.screenmatch.modelos.serie;
 import br.com.alura.screenmatch.calculos.calcularodaDeTempo;
 
 public class Main {
