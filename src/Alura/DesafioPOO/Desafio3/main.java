@@ -1,5 +1,11 @@
 public class main {
     public static void main(String[] args) {
+        gato gato = new gato();
+        cachorro cachorro = new cachorro();
+        cachorro.setNome("Renato");
+        gato.setNome("Anderson");
+        cachorro.emitirSom();
+        gato.emitirSom();
 
     }
 
