@@ -13,6 +13,13 @@ public class main {
          * gato.arranharMoveis();
          */
 
+        contaCorrente conta1 = new contaCorrente();
+        conta1.setNome("TESTE");
+        conta1.depositar(1500);
+        conta1.consultaSaldo();
+        conta1.sacar(500);
+        conta1.consultaSaldo();
+
     }
 
     /*
